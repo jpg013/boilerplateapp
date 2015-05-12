@@ -1,6 +1,6 @@
 var Backbone    = require('backbone');
 var HomeView    = require('./views/home.view');
-var $ = require("jquery");
+var $           = require("jquery");
 
 var Router = Backbone.Router.extend({
     routes: {
