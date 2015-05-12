@@ -1,25 +1,18 @@
 /*
  * Module dependencies
  */
+require("./environment")
 var express    = require("express");
-var mongoose   = require("mongoose").connect("mongodb://localhost:27017/projectx?auto_reconnect or= true&maxPoolSize or= 10");
+var mongoose   = require("mongoose").connect(process.env.MONGO);
+var bodyParser = require("body-parser");
 
 var app = express()
-var port = 3000
+var port = process.env.PORT
 
+// Midleware
+app.use(bodyParser.json({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
-
-// ROUTES
-// ==============================================
-
-app.route('/login')
-    .get(function(req, res) {
-        res.send('this is the login form');
-    })
-    .post(function(req, res) {
-        console.log('processing');
-        res.send('processing the login form!');
-    });
 
 app.listen(port);
 console.log("Listening on port: " + port);
