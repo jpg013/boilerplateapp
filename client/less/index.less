@@ -1,8 +1,15 @@
-@import "../../bower_components/bootstrap/less/variables.less";
+// Core variables and mixins
+@import "./variables.less"; // Import our own variables
 @import "../../bower_components/bootstrap/less/mixins.less";
+
+// Reset and dependencies
 @import "../../bower_components/bootstrap/less/normalize.less";
 @import "../../bower_components/bootstrap/less/print.less";
+
+// @import "../public/bower_components/bootstrap/less/glyphicons.less";
 @import "../../bower_components/font-awesome/less/font-awesome.less";
+
+// Core CSS
 @import "../../bower_components/bootstrap/less/scaffolding.less";
 @import "../../bower_components/bootstrap/less/type.less";
 @import "../../bower_components/bootstrap/less/code.less";
@@ -10,6 +17,8 @@
 @import "../../bower_components/bootstrap/less/tables.less";
 @import "../../bower_components/bootstrap/less/forms.less";
 @import "../../bower_components/bootstrap/less/buttons.less";
+
+// Components
 @import "../../bower_components/bootstrap/less/component-animations.less";
 @import "../../bower_components/bootstrap/less/dropdowns.less";
 @import "../../bower_components/bootstrap/less/button-groups.less";
@@ -31,9 +40,15 @@
 @import "../../bower_components/bootstrap/less/responsive-embed.less";
 @import "../../bower_components/bootstrap/less/wells.less";
 @import "../../bower_components/bootstrap/less/close.less";
+
+// Components w/ JavaScript
 @import "../../bower_components/bootstrap/less/modals.less";
 @import "../../bower_components/bootstrap/less/tooltip.less";
 @import "../../bower_components/bootstrap/less/popovers.less";
 @import "../../bower_components/bootstrap/less/carousel.less";
+
+// Utility classes
 @import "../../bower_components/bootstrap/less/utilities.less";
 @import "../../bower_components/bootstrap/less/responsive-utilities.less";
+
+@import "./bootswatch.less";
