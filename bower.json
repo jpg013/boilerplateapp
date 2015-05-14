@@ -1,5 +1,5 @@
 {
-  "name": "projectX",
+  "name": "boilerplateApp",
   "dependencies": {
     "bootstrap"     : "~3.3.4",
     "font-awesome"  : "~4.3.0"
