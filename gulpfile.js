@@ -4,7 +4,7 @@ require("./environment")
 var gulp        = require('gulp');
 var rename      = require('gulp-rename');
 var less        = require('gulp-less')
-var minifyCSS   = require('gulp-minify-css');
+var minifyCSS   = require('gulp-clean-css');
 var nodemon     = require('gulp-nodemon');
 var browserify  = require('browserify');
 var rename      = require('gulp-rename');
