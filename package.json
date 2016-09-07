@@ -24,13 +24,14 @@
     "vinyl-source-stream" : "*",
     "run-sequence"        : "*",
     "gulp-less"           : "*",
-    "gulp-minify-css"     : "*",
+    "gulp-clean-css"      : "*",
     "gulp-autoprefixer"   : "*",
     "gulp-sourcemaps"     : "*",
     "vinyl-buffer"        : "*",
     "gulp-util"           : "*",
     "gulp-if"             : "*",
     "gulp-concat"         : "*",
-    "body-parser"         : "*"
+    "body-parser"         : "*",
+	"gulp-livereload" 	  : "*"
   }
 }
